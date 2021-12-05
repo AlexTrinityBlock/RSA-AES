@@ -18,7 +18,7 @@ PrivateKey=readKeyFile(PrivateKeyPath)
 
 PlainFilePath = filedialog.asksaveasfile(initialfile = (ntpath.basename(cipherFilePath)).replace(".cipher",""))
 PlainFilePath = PlainFilePath.name
-os.system("ls")
+# os.system("ls")
 
 PlainFileName = ntpath.basename(cipherFilePath)
 decrptoFile(cipherFilePath,PlainFilePath , PrivateKey)

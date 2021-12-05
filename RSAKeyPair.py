@@ -14,8 +14,8 @@ publicKey, privateKey = RSAKeyPair()
 PublicKeyPath = (filedialog.asksaveasfile(initialfile = "PublicKey")).name
 PrivateKeyPath = (filedialog.asksaveasfile(initialfile = "PrivateKey")).name
 
-if os.path.isfile(PublicKeyPath):os.system("rm "+PublicKeyPath)
-if os.path.isfile(PrivateKeyPath):os.system("rm "+PrivateKeyPath)
+if os.path.isfile(PublicKeyPath):os.remove(PublicKeyPath)
+if os.path.isfile(PrivateKeyPath):os.remove(PrivateKeyPath)
 
 writeByte(publicKey,PublicKeyPath)
 writeByte(privateKey,PrivateKeyPath)

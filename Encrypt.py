@@ -16,6 +16,6 @@ publicKey = readKeyFile(PublicKeyPath)
 
 CipherFilePath = filedialog.asksaveasfile(initialfile = ntpath.basename(file_path)+".cipher")
 
-os.system("ls")
+# os.system("ls")
 
 encrptoFile(file_path, CipherFilePath.name, publicKey)
