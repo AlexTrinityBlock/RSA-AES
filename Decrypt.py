@@ -14,11 +14,11 @@ print(cipherFilePath)
 PrivateKeyPath = filedialog.askopenfilename( title='Private Key Path ')
 PrivateKey=readKeyFile(PrivateKeyPath)
 
-PlainFilePath = filedialog.asksaveasfile(initialfile = ntpath.basename(cipherFilePath))
-
+PlainFilePath = filedialog.asksaveasfile(initialfile = (ntpath.basename(cipherFilePath)).replace(".cipher",""))
+PlainFilePath = PlainFilePath.name
 os.system("ls")
 
 privateKey=readKeyFile("./PrivateKey/PrivateKey")
 PlainFileName = ntpath.basename(cipherFilePath)
-decrptoFile(cipherFilePath, PlainFilePath.name, PrivateKey)
+decrptoFile(cipherFilePath,PlainFilePath , PrivateKey)
 print("done")
