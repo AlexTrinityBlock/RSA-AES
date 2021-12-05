@@ -5,5 +5,6 @@ RSA-AES Hybrid ecrypt by 蕭維均
 
 # Download
 
-[Windows](https://github.com/AlexTrinityBlock/RSA-AES/raw/master/Executable/Windows_64bit.zip)
-[Ubuntu20.04](https://github.com/AlexTrinityBlock/RSA-AES/raw/master/Executable/ubuntu20.04.zip)
+[Windows](https://github.com/AlexTrinityBlock/RSA-AES/raw/master/Executable/Windows_64bit.zip)  
+
+[Ubuntu20.04](https://github.com/AlexTrinityBlock/RSA-AES/raw/master/Executable/ubuntu20.04.zip)  
