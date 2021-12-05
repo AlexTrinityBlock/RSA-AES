@@ -5,9 +5,11 @@ import os
 import tkinter as tk
 from tkinter import filedialog
 import ntpath
+from tkinter import messagebox
 
 root = tk.Tk()
 root.withdraw()
+messagebox.showinfo("Homework by student:1100336", "This Homework made from student 1100336")
 cipherFilePath = filedialog.askopenfilename( title='Cipher text')
 print(cipherFilePath)
 
