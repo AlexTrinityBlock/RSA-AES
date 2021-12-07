@@ -24,4 +24,4 @@ please read PyCryptodome official tutorial
 # Download
 
 [Ubuntu20.04](https://github.com/AlexTrinityBlock/RSA-AES/raw/master/Executable/Ubuntu20.04.zip)  
-[windows](https://github.com/AlexTrinityBlock/RSA-AES/raw/master/Executable/Windows_64bit.zip)
+[Windows](https://github.com/AlexTrinityBlock/RSA-AES/raw/master/Executable/Windows_64bit.zip)
