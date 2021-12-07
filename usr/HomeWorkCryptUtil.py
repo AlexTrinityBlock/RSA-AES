@@ -38,10 +38,14 @@ def decrptoBytes(ciphertextBytes, key):
 def writeByte(byteMsg, fileName):
     with open(fileName, "ab+") as f:
         f.write(byteMsg)
+        f.close()
 
 
 def readKeyFile(fileName):
-    key = open(fileName, "rb").read()
+    key=bytes()
+    with open(fileName, "rb") as f:
+        key = f.read()
+        f.close()
     return key
 
 
@@ -62,6 +66,7 @@ def encrptoFile(InputFileName, outputFileName, RSAPublicKey):
         while fBytes:
             fBytes = f.read(128)
             writeByte(encrptoBytes(fBytes, key), outputFileName)
+        f.close()
 
 
 def decrptoFile(InputFileName, outputFileName, RSAPrivateKey):
@@ -78,6 +83,7 @@ def decrptoFile(InputFileName, outputFileName, RSAPrivateKey):
         while bytes:
             bytes = f.read(128)
             writeByte(decrptoBytes(bytes, key), outputFileName)
+        f.close()
 
 
 def RSAKeyPair():
@@ -103,5 +109,6 @@ def RSAdecrypto(cipherAESkey: bytes, privateKey: bytes):
 def readCipherAESkey(InputFileName):
     with open(InputFileName, "rb") as f:
         bytes = f.read(256)
+        f.close()
         return bytes
 
