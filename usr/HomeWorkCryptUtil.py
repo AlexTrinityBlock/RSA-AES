@@ -50,6 +50,7 @@ def readKeyFile(fileName):
 
 
 def encrptoFile(InputFileName, outputFileName, RSAPublicKey):
+    fileIOBlockSize=1024*1024*128
     if os.path.isfile(outputFileName):
         os.system("rm "+outputFileName)
     # AES
@@ -61,15 +62,16 @@ def encrptoFile(InputFileName, outputFileName, RSAPublicKey):
     writeByte(cipherAESkey, outputFileName)
     # AES
     with open(InputFileName, "rb") as f:
-        fBytes = f.read(128)
+        fBytes = f.read(fileIOBlockSize)
         writeByte(encrptoBytes(fBytes, key), outputFileName)
         while fBytes:
-            fBytes = f.read(128)
+            fBytes = f.read(fileIOBlockSize)
             writeByte(encrptoBytes(fBytes, key), outputFileName)
         f.close()
 
 
 def decrptoFile(InputFileName, outputFileName, RSAPrivateKey):
+    fileIOBlockSize=1024*1024*128
     if os.path.isfile(outputFileName):
         os.system("rm "+outputFileName)
     print(InputFileName,RSAPrivateKey)
@@ -77,11 +79,11 @@ def decrptoFile(InputFileName, outputFileName, RSAPrivateKey):
     print("AES key recover:", key, "\n")
     with open(InputFileName, "rb") as f:
         f.seek(256, 1)
-        bytes = f.read(128)
+        bytes = f.read(fileIOBlockSize)
         print(bytes)
         writeByte(decrptoBytes(bytes, key), outputFileName)
         while bytes:
-            bytes = f.read(128)
+            bytes = f.read(fileIOBlockSize)
             writeByte(decrptoBytes(bytes, key), outputFileName)
         f.close()
 
