@@ -22,7 +22,7 @@ please read PyCryptodome official tutorial
 
 [https://pycryptodome.readthedocs.io/en/latest/src/installation.html](https://pycryptodome.readthedocs.io/en/latest/src/installation.html)
 
-# run on linux(suggest)
+# run on linux(Better)
 
 After you have the python eviroment and PyCryptodome,you can run it.
 
