@@ -71,7 +71,9 @@ py Decrypt.py
 
 # Download Binary
 
-<span style="color:red">**Warning!!! if you run on Windows,Please try to using python script because Microsoft Defender will autoremove this binary version RSA-AES program**</span>
+**Warning!!!**
+ 
+**If you run on Windows,Please try to using python script because Microsoft Defender will autoremove this binary version RSA-AES program**
 
 [Ubuntu20.04](https://github.com/AlexTrinityBlock/RSA-AES/raw/master/Executable/Ubuntu20.04.zip)  
 [Windows](https://github.com/AlexTrinityBlock/RSA-AES/raw/master/Executable/Windows_64bit.zip)
