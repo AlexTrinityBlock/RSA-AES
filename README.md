@@ -26,19 +26,19 @@ please read PyCryptodome official tutorial
 
 After you have the python eviroment and PyCryptodome,you can run it.
 
-## 1.Get RSA key pair
+### 1.Get RSA key pair
 
 ```
 python3 RSAKeyPair.py
 ```
 
-## 2.Encrypt
+### 2.Encrypt
 
 ```
 python3 Encrypt.py
 ```
 
-## 3.Decrypt
+### 3.Decrypt
 
 ```
 python3 Decrypt.py
