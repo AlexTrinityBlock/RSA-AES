@@ -15,7 +15,7 @@ Require MSVC v142 x64/x86 or MSVC v140 x64/x86
 
 ```
 pip install pycryptodomex --no-binary :all:
-pip install -U PyCryptodome
+pip install PyCryptodome
 ```
 
 please read PyCryptodome official tutorial
