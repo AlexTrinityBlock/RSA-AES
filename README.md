@@ -22,7 +22,7 @@ please read PyCryptodome official tutorial
 
 [https://pycryptodome.readthedocs.io/en/latest/src/installation.html](https://pycryptodome.readthedocs.io/en/latest/src/installation.html)
 
-# run
+# run on linux
 
 After you have the python eviroment and PyCryptodome,you can run it.
 
@@ -43,6 +43,27 @@ python3 Encrypt.py
 ```
 python3 Decrypt.py
 ```
+
+# run on Windows
+
+### 1.Get RSA key pair
+
+```
+py RSAKeyPair.py
+```
+
+### 2.Encrypt
+
+```
+py Encrypt.py
+```
+
+### 3.Decrypt
+
+```
+py Decrypt.py
+```
+
 
 # Download Source file
 
